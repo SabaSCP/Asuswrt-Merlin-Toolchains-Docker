@@ -46,7 +46,7 @@ RUN \
     echo "docker ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/docker 
 
     # Sets up toolchains
-RUN gosu docker bash -c 'cd ~ && git clone https://github.com/RMerl/am-toolchains'
+RUN gosu docker bash -c 'cd ~ && git clone https://github.com/SabaSCP/am-toolchains --branch 386_x'
 
 
 COPY envs /home/docker/envs
